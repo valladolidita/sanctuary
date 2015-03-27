@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sanctuary
@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 6.0 Accessibility
 7.0 Alignments
 8.0 Clearings
+X.X Heading
 9.0 Widgets
 10.0 Content
 	10.1 Posts and pages
@@ -41,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 12.0 Media
 	12.1 Captions
 	12.2 Galleries
+X.XX Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -271,8 +273,9 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-size: 16px;
-	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
@@ -282,7 +285,8 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+	clear: right;
+	font-family: 'Arvo', serif;
 }
 
 p {
@@ -341,6 +345,8 @@ big {
 	font-size: 125%;
 }
 
+
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -356,6 +362,7 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+	margin-left: 1.5em;
 }
 
 blockquote:before,
@@ -709,6 +716,62 @@ a:active {
 }
 
 /*--------------------------------------------------------------
+X.X Heading
+--------------------------------------------------------------*/
+
+#site-branding {
+  float: left;
+}
+.site-title {
+  font-family: 'Arvo', serif;
+  font-size: 5rem;
+  text-transform: capitalize;
+  letter-spacing: -0.01em;
+  margin: 0 0;
+  font-weight: 700;
+  height: 115px;
+  color: white;
+}
+
+.site-description {
+  position: absolute;
+  top: 3.90em;
+  left: 1.48em;
+  font-family: 'Open Sans Condensed', sans-serif;	
+  font-weight: 300;
+  font-size: 1.85rem;
+  letter-spacing: -0.01em; d
+  line-height: 1.85rem;
+  margin-top: 0; 
+  color: white;
+}
+
+.menu-sanctuary-menu-container {
+	float: right;
+	position: absolute;
+	top: 6.60em;
+    left: 0;
+    width: 100%;
+    height: 11%;
+    border-bottom: 0;
+    background-color: rgb(255,0,255);
+    background-color: rgba(0, 0, 0, 0.8);
+	font-family: 'Arvo', serif;
+	font-weight: bold; 
+	font-size: .85rem;
+    z-index: -1;
+}
+
+.menu-sanctuary-menu-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.35em;
+  text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -882,3 +945,75 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+X.XX Footer
+--------------------------------------------------------------*/
+
+.site- {
+  letter-spacing: .5px;
+  clear: both;
+  float: right;
+  position: absolute;
+  top: 48.80em;
+  left: 0;
+  width: 100%;
+  height: 9.5%;
+  border-bottom: 0;
+  background-color: rgb(255,0,255);
+  background-color: rgba(0, 0, 0, 0.8);  
+}
+
+/* social-media */
+.social-media {
+  text-transform: uppercase;
+  float: left;
+  margin: 0 0 0 .75em;
+  padding: 0;
+  font-size: 40px;
+  color: white;
+  opacity: 0.35;
+}
+
+.social-media ul {
+  padding: 0;
+  margin-top: .35em;
+  list-style-type: none;
+}
+
+.social-media li {
+  float: left;
+  margin: 0em;
+  padding: 0 .5em 0 0;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+}
+
+/* footer-copyright */
+.footer-copyright {
+    float: right;
+    margin-top: 4em;
+    margin-right: 0;
+    padding: 1em 0em;
+    font-size: 11px;
+    font-family: 'open+sans', sans-serif;
+    font-style: thin;
+    color: white;
+}
+.footer-copyright ul {
+  list-style-type: none;
+  margin:  0;
+  padding: 0;
+}
+.footer-copyright li {
+  float: left;
+  margin:  0;
+  padding: 0 1em 0 0;
+}
+.footer-copyright a {
+  text-decoration: none;
+}
+
